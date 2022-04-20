@@ -1,6 +1,6 @@
 # Collection Service Orders
 
-#### Currently working to sanitize from official version @CarteretCraven-EMC
+#### Currently working to sanitize from official version @Carteret-Craven-EMC
 
 * ~~Database~~
 * Core Library *(WIP)*
