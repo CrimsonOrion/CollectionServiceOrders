@@ -5,6 +5,32 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CollectionServiceOrders.Core\CollectionServiceOrders.Core.csproj" />
+    <ProjectReference Include="..\Modules\About.Module\About.Module.csproj" />
+    <ProjectReference Include="..\Modules\AdditionalDeposit.Module\AdditionalDeposit.Module.csproj" />
+    <ProjectReference Include="..\Modules\AddNewCutoff.Module\AddNewCutoff.Module.csproj" />
+    <ProjectReference Include="..\Modules\AdhocReport.Module\AdhocReport.Module.csproj" />
+    <ProjectReference Include="..\Modules\Administration.Module\Administration.Module.csproj" />
+    <ProjectReference Include="..\Modules\CutoffScreen.Module\CutoffScreen.Module.csproj" />
+    <ProjectReference Include="..\Modules\ImportDataFromDaffron.Module\ImportDataFromDaffron.Module.csproj" />
+    <ProjectReference Include="..\Modules\SearchForCutoff.Module\SearchForCutoff.Module.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
